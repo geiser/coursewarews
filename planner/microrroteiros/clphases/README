@@ -1,0 +1,21 @@
+
+This folder containt collaborative scenario phase modeling:
+
+- Anchored instruction interactions (file: anchoredinstruction.lisp)
+    (createLDAnchoredInstructionPhase ?goals ?groups)
+
+- Cognitive apprenticeship (file: cognitiveapprenticeship.lisp)
+    (createLDCogApprenticeshipPhase ?goals ?groups)
+
+- Cognitive flexibility (file: cognitiveflexibility.lisp)
+    (createLDCogFlexibilityPhase ?goals ?groups)
+
+- Distribute cognition (file: distributedcognition.lisp)
+    (createLDDistCognitionPhase ?goals ?groups)
+
+- LPP (file: lpp.lisp)
+    (createLDLPPPhase ?goals ?groups)
+
+- Peer tutoring (file: peertutoring.lisp)
+    (createLDPeerTutoringPhase ?goals ?groups)
+

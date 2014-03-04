@@ -1,0 +1,21 @@
+
+This folder containt interaction patterns modeling:
+
+- Anchored instruction interactions (file: anchoredinstruction.lisp)
+    (createLDAnchoredInstructionInteractions ?goals ?groups)
+
+- Cognitive apprenticeship (file: cognitiveapprenticeship.lisp)
+    (createLDCogApprentinceshipInteractions ?id ?goals ?groups)
+
+- Cognitive flexibility (file: cognitiveflexibility.lisp)
+    (createLDCogFlexibilityInteractions ?goals ?groups)
+
+- Distribute cognition (file: distributedcognition.lisp)
+    (createLDDistCognitionInteractions ?goals ?groups)
+
+- LPP (file: lpp.lisp)
+    (createLDLPPInteractions ?id ?goals ?groups)
+
+- Peer tutoring (file: peertutoring.lisp)
+    (createLDPeerTutoringInteractions ?goals ?groups)
+

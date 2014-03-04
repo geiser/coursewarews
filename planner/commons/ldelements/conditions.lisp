@@ -1,0 +1,103 @@
+   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+   ;; Common axions and methods used to modeling clscenarios                ;;
+   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+   
+   ;; Method to create ilevents conditions to show or hiden items
+   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+   (:method (createLDILEventConditions ?groups)
+      ()
+      ((createLDILEventConditions! ?groups)))
+   
+   ;; fall-back
+   (:method (createLDILEventConditions ?groups)
+      ()
+      ())
+   
+   (:method (createLDILEventConditions! ?groups)
+      ()
+      ((!startLDElement conditions)
+       (createLDTitle (ILEvent Conditions) ())
+       (createILEventConditions ?groups)
+       (!endLDElement conditions)))
+   
+   (:method (createILEventConditions (?instructors ?learners))
+      ((getElement ?e ((class CurrentLDElement)))
+       (getPropertyValue ?u ?e hasCurrentUoL)
+       (getPropertyValues ?unInstRoles ?instructors hasRole)
+       (filterByQuery ?instRoles ?unInstRoles ((class Role)
+                                               (property hasCurrentUoL ?u)
+                                               (class Instructional)))
+       (getPropertyValues ?unLearRoles ?learners hasRole)
+       (filterByQuery ?learRoles ?unLearRoles ((class Role)
+                                               (property hasCurrentUoL ?u)
+                                               (class Learning)))
+       (buildPropertyQuery ?instQuery hasParticipant ?instructors ())
+       (getElements ?instItems ((class ILEventItem)
+                                (class Instructional) (class Item)
+                                (property hasCurrentUoL ?u) . ?instQuery))
+       (buildPropertyQuery ?learQuery hasParticipant ?learners ())
+       (getElements ?learItems ((class ILEventItem) 
+                                (class Learning) (class Item)
+                                (property hasCurrentUoL ?u) . ?learQuery))
+       (different ?instRoles ())
+       (different ?learRoles ())
+       (different ?instItems ())
+       (different ?learItems ()))
+      ((!startLDElement if)
+       (distributeLDMemberOfRole ?instRoles)
+       (!endLDElement if)
+       (!startLDElement then)
+       (!startLDElement show)
+       (distributeItemRef ?instItems)
+       (!endLDElement show)
+       (!startLDElement hide)
+       (distributeItemRef ?learItems)
+       (!endLDElement hide)
+       (!endLDElement then)
+       (!startLDElement else)
+       (!startLDElement if)
+       (distributeLDMemberOfRole ?learRoles)
+       (!endLDElement if)
+       (!startLDElement then)
+       (!startLDElement show)
+       (distributeItemRef ?learItems)
+       (!endLDElement show)
+       (!startLDElement hide)
+       (distributeItemRef ?instItems)
+       (!endLDElement hide)
+       (!endLDElement then)
+       (!endLDElement else)))
+   
+   (:method (distributeLDMemberOfRole ?roles)
+      ((length ?nroRoles ?roles)
+       (call > ?nroRoles 1))
+      ((!startLDElement _or)
+       (distributeMemberOfRole ?roles)
+       (!endLDElement _or))
+      ;; fall-back
+      ((length ?nroRoles ?roles)
+       (call = ?nroRoles 1))
+      ((distributeMemberOfRole ?roles)))
+   
+   ;;
+   (:method (distributeMemberOfRole ())
+      ()
+      ())
+
+   (:method (distributeMemberOfRole (?role . ?roles))
+      ()
+      ((!startLDElement is-member-of-role ((ref ?role)))
+       (!endLDElement is-member-of-role)
+       (distributeMemberOfRole ?roles)))
+   
+   ;;
+   (:method (distributeItemRef ())
+      ()
+      ())
+
+   (:method (distributeItemRef (?item . ?items))
+      ()
+      ((!startLDElement item-ref ((ref ?item)))
+       (!endLDElement item-ref)
+       (distributeItemRef ?items)))
+

@@ -1,0 +1,34 @@
+
+This folder containt collaborative roles modeling:
+
+- Anchored Instructor (instructional, file: anchoredinstructor.lisp)
+    (createLDAnchoredInstructorRole ?goals ?groups)
+
+- Anchor Holder (learning, file: anchorholder.lisp)
+    (createLDAnchorHolderRole ?goals ?groups)
+
+- Apprenticeship (learning, file: apprenticeship.lisp)
+    (createLDApprenticeshipRole ?goals ?groups)
+
+- Audience (learning, file: audience.lisp)
+    (createLDAudienceRole ?goals ?groups)
+
+- Full participants (file: fullparticipant.lisp)
+    (createLDFullParticipantLearnerRole ?goals ?groups)
+    (createLDFullParticipantInstructorRole ?goals ?groups)
+
+- Master (file: master.lisp)
+    (createLDMasterRole ?goals ?groups)
+
+- Panelist (file: panelist.lisp)
+    (createLDPanelistRole ?goals ?groups)
+
+- Peer tutee (file: peertutee.lisp)
+    (createLDPeerTuteeRole ?goals ?groups)
+
+- Peer tutor (instructional, file: peertutor.lisp)
+    (createLDPeerTutorRole ?goals ?groups)
+
+- Peripheral (learning, file: peripheral.lisp)
+    (createLDPeripheralRole ?goals ?groups)
+

@@ -1,0 +1,31 @@
+
+This folder containt learning strategies modeling:
+
+- Learning by apprenticeship (file: learningbyapprenticeship.lisp)
+    (createLDLearningByApprenticeshipStrategy ?goals ?groups)
+
+- Learning by being taught (file: learningbybeingtaught.lisp)
+    (createLDLearningByBeingTaughtStrategy ?goals ?groups)
+
+- Learning by diagnosing (file: learningbydiagnosing.lisp) 
+    (createLDLearningByDiagnosingStrategy ?goals ?groups)
+
+- Learning by discussion (file: learningbydiscussion.lisp)
+    (createLDLearningByDiscussionInstructionalStrategy ?goals ?groups)
+    (createLDLearningByDiscussionLearningStrategy ?goals ?groups)
+
+- Learning by guiding (file: learningbyguiding.lisp)
+    (createLDLearningByGuidingStrategy ?goals ?groups)
+
+- Learning by practice (file: learningbypractice.lisp)
+    (createLDLearningByPracticeStrategy ?goals ?groups)  
+
+- Learning by reflection (file: learningbyreflection.lisp)
+    (createLDLearningByReflectionStrategy ?goals ?groups)
+
+- Learning by selfexpression (file: learningbyselfexpression.lisp)
+    (createLDLearningBySelfexpressionStrategy ?goals ?groups)
+
+- Learning by teaching (file: learningbyteaching.lisp)
+   (createLDLearningByTeachingStrategy ?goals ?groups)
+

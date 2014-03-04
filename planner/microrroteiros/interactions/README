@@ -1,0 +1,67 @@
+
+This folder containt directed and cyclic interaction modeling:
+
+- Demonstrating how solve problem - clarifying problem
+  (file: demonstratinghowsolveproblem-clarifyingproblem.lisp)
+    (createLDDemonHowSolveProblemClarifyingProblemInteractions ?goals ?groups)
+
+- Demonstrating how solve problem - instigating discussion
+  (file: demonstratinghowsolveproblem-instigatingdiscussion.lisp)
+    (createLDDemonHowSolveProblemInstDiscussionInteractions ?goals ?groups)
+
+- Knowledge transmission - request problem detail
+  (file : knowledgetransmission-requestproblemdetail.lisp)
+    (createLDKnowlTransmissionReqProblemDetailInteractions ?goals ?groups)
+
+- Metadiagnosing
+  (file: metadiagnosing.lisp)
+    (createLDMetadiagnosingInteractions ?goals ?groups)
+
+- Metadiagnosing - elicit performance
+  (file: metadiagnosing-elicitperformance.lisp)
+    (createLDMetadiagElicitPerformanceInteractions ?goals ?groups)
+
+- Metarecognize communication
+  (file: metarecognizecommunication.lisp)
+    (createLDMetarecognizeCommunicationInteractions ?goals ?groups)
+
+- Metarecognize communication - instigating (discussion and thinking)
+  (file: metarecognizecommunication-instigating.lisp)
+    (createLDMetarecognizeCommunicationWithInstigatingInteractions ?goals ?groups)
+
+- Metarecognize communication - monitoring
+  (file: metarecognizecommunication-monitoring.lisp)
+    (createLDMetarecognizeCommunicationWithMonitoringInteractions ?goals ?groups)
+
+- Metarecognize progress
+  (file: metarecognizeprogress.lisp)
+    (createLDMetarecognizeProgressInteractions ?goals ?groups)
+
+- Monitoring - instigating thinking
+  (file: monitoring-instigatingthinking.lisp)
+    (createLDMonitoringInstThinkingInteractions ?goals ?groups)
+
+- Monitoring - instigating thinking with metademonstration
+  (file: monitoring-instigatingthinking-metademonstration.lisp)
+    (createLDMonitInstThinkWithMetademonInteractions ?goals ?groups)
+
+- Monitoring - notify how learner is
+  (file: monitoring-notifyhowlearneris.lisp)
+    (createLDMonitoringNotifyHowLearnerIsInteractions ?goals ?groups)
+
+- Request problem detail - notigy how learner is
+  (file: requestproblemdetail-notifyhowlearneris.lisp)
+    (createLDReqProblemDetailNotifyHowLearnerIsInteractions ?goals ?groups)
+
+- Request problem detail - showing solution 
+  (file: requestproblemdetail-showingsolution.lisp)
+    (createLDReqProblemDetailShowSolutionInteractions ?goals ?groups)
+
+- Request problem detail - instigating thinking
+  (file: requestproblemdetail-instigatingthinking.lisp)
+    (createLDReqProblemDetailInstThinkingInteractions ?goals ?groups)
+
+- Showing solution - instigating discussion
+  (file: showingsolution-instigatingdiscussion.lisp)
+    (createLDShowSolutionInstDiscussionInteractions ?goals ?groups)
+

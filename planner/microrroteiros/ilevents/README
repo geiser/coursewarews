@@ -1,0 +1,39 @@
+
+This folder containt il events modeling:
+
+- Clarifying problem (file: clarifyingproblem.lisp)
+    (createLDClarifyingProblemILEvent ?goals ?groups)
+
+- Demonstrating how solve problem (file: demonstratinghowsolveproblem.lisp)
+    (createLDDemonHowSolveProblemILEvent ?goals ?groups)
+
+- Diagnosing problem (file: diagnosingproblem.lisp)
+    (createLDDiagProblemILEvent ?goals ?groups)
+
+- Eliciting performance (file: elicitingperformance.lisp)
+    (createLDElicitPerformanceILEvent ?goals ?groups)
+
+- Instigating discussion (file: instigatingdiscussion.lisp)
+    (createLDInstDiscussionILEvent ?goals ?groups)
+
+- Instigating thinking (file: instigatingthinking.lisp)
+    (createLDInstThinkingILEvent ?goals ?groups)
+
+- Knowledge transmission (file: knowledgetransmission.lisp)
+    (createLDKnowlTransmissionILEvent ?goals ?groups)
+
+- Monitoring (file: monitoring.lisp)
+    (createLDMonitoringILEvent ?goals ?groups)
+
+- Notifying how learner is (file: notifyinghowlearneris.lisp)
+    (createLDNotifyHowLearnerIsILEvent ?goals ?groups)
+
+- Request problem detail (file: requestproblemdetail.lisp)
+    (createLDReqProblemDetailILEvent ?goals ?groups)
+
+- Setting learning context (file: settinglearningcontext.lisp)
+    (createLDSetLearningContextILEvent ?goals ?groups)
+
+- Showing solution (file: showingsolution.lisp)
+    (createLDShowSolutionILEvent ?goals ?groups)
+

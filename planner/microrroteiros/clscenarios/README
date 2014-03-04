@@ -1,0 +1,21 @@
+
+This folder containt collaborative scenario modeling:
+
+- Anchored instruction (file: anchoredinstruction.lisp)
+    (createLDAnchoredInstructionCLScenario ?goals ?groups)
+
+- Cognitive apprenticeship (file: cognitiveapprenticeship.lisp)
+    (createLDCogApprenticeshipCLScenario ?goals ?groups)
+
+- Cognitive flexibility (file: cognitiveflexibility.lisp)
+    (createLDCogFlexibilityCLScenario ?goals ?groups)
+
+- Distribute cognition (file: distributedcognition.lisp)
+    (createLDDistCognitionCLScenario ?goals ?groups)
+
+- LPP (file: lpp.lisp)
+    (createLDLPPCLScenario ?goals ?groups)
+
+- Peer tutoring (file: peertutoring.lisp)
+    (createLDPeerTutoringCLScenario ?goals ?groups)
+
